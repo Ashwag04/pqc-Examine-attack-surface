@@ -5,17 +5,21 @@ Short description: Code and experiments for "Examining the Attack Surface of PQC
 Study and demonstrate the attack surface of Post-Quantum Cryptography (PQC) by (1) building small, toy implementations to learn internal data flows and (2) running reproducible algorithmic/implementation experiments (brute-force, simulated side-channel) that illustrate how parameter choices and coding mistakes reduce security.
 
 ## Repo layout — what each part is for
+/README.md                 # high-level project overview (see template below)
+/docs/                     # literature notes, protocols, SOPs, ethics doc
+/src/                      # code: examples, toy_kem, analysis scripts
+/experiments/              # experiment code and notebooks by experiment id
+/experiments/BF-001/       # example: bruteforce toy experiment
+/data/                     # raw data, traces (NOT committed if large)
+/notebooks/                 # exploratory Jupyter notebooks
+/docker/                   # Dockerfile + scripts for reproducibility
+/.github/                  # GitHub workflows, issue/PR templates
+/tests/                    # automated tests (basic smoke tests)
+requirements.txt
+Dockerfile
 README.md
-requirements.txt         # declared Python deps (oqs can fail on Windows; see notes)
-src/
-  ├─ toy_kem.py          # pedagogical toy KEM (generate/encaps/decaps) — run now
-  └─ kyber_example.py    # real KEM example (liboqs) — run in WSL/Docker
-experiments/
-  └─ bruteforce/
-      └─ run_bruteforce.py  # exhaustively brute-force toy_kem secret (12/14/16 bits)
-docs/                    # reading list, SOPs, ethics (add team notes here)
-data/                    # pointers/links to raw traces (do NOT commit large files)
-notebooks/               # Jupyter notebooks for analysis and plots
-.github/ISSUE_TEMPLATE/  # experiment issue template
-docker/                  # optional Dockerfile for reproducibility
-tests/                   # optional smoke tests
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+LICENSE
+
+
