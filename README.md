@@ -1,8 +1,13 @@
 ﻿# PQC Attack Surface — [Team Name]
 Short description: Code and experiments for "Examining the Attack Surface of PQC".
 
-# Project goal:
-Study and demonstrate the attack surface of Post-Quantum Cryptography (PQC) by (1) building small, toy implementations to learn internal data flows and (2) running reproducible algorithmic/implementation experiments (brute-force, simulated side-channel) that illustrate how parameter choices and coding mistakes reduce security.
+# 🎯 Project Goal
+
+Study and demonstrate the attack surface of Post-Quantum Cryptography (PQC) by:
+
+Building small, toy implementations to learn internal data flows.
+Running reproducible algorithmic and implementation experiments (e.g., brute-force, simulated side-channel).
+Showing how parameter choices and coding mistakes can reduce security.
 
 ## Repo layout — what each part is for
 /README.md                 # high-level project overview (see template below)
@@ -21,5 +26,6 @@ README.md
 CONTRIBUTING.md
 CODE_OF_CONDUCT.md
 LICENSE
+
 
 
