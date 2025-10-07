@@ -10,6 +10,7 @@ Running reproducible algorithmic and implementation experiments (e.g., brute-for
 Showing how parameter choices and coding mistakes can reduce security.
 
 ## 🗂️ Repository Layout
+```bash
 README.md                 → High-level project overview
 requirements.txt          → Python dependencies
 src/                      → Toy KEM + Kyber example (code)
@@ -24,6 +25,7 @@ notebooks/                → Jupyter notebooks for analysis
 .github/                  → Workflow & issue templates
 docker/                   → Docker setup (optional)
 tests/                    → Automated smoke tests
+
 
 
 
